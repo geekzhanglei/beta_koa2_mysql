@@ -1,0 +1,31 @@
+<!--
+ * @Author: zhanglei
+ * @Date: 2019-07-15 15:50:39
+ * @LastEditors: zhanglei
+ * @LastEditTime: 2019-09-16 15:12:32
+ * @Description: 测试接口页
+ -->
+<% if (user) { %>
+<h2><%= user.name %></h2>
+<% } %>
+<form action="/blogapi/article/delete" method="post" target="ifr">
+    <label for="myinput">测试插入数据-输入name</label>
+    <input name="id" type="text" />
+    <input type="submit" value="提交内容" />
+</form>
+
+<form action="/blogapi/admin/modifypw" method="post" target="ifr">
+    <label>修改密码</label>
+    <input name="password" type="text" />
+    <input name="newpassword" type="text" />
+    <input type="text" name="token" value="dGVzdGJsb2c=" />
+    <input type="submit" value="修改密码" />
+</form>
+<form action="/blogapi/admin/modifyAdminInfo" method="post" target="ifr">
+    <label>上传图片</label>
+    <input name="nickname" type="text" placeholder="nickname" />
+    <input type="file" name="headimg" />
+    <input type="text" name="token" value="dGVzdGJsb2c=" />
+    <input type="submit" value="上传图片" />
+</form>
+<!-- <iframe name='ifr' style="display:none;"></iframe> -->
