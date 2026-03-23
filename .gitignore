@@ -4,8 +4,12 @@ node_modules
 /public/upload/
 
 # local env files
+.env
 .env.local
 .env.*.local
+
+# Database config
+config/mysql_config.js
 
 # Log files
 npm-debug.log*

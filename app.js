@@ -7,6 +7,7 @@
  */
 const Koa = require('koa');
 const app = new Koa();
+require('dotenv').config();
 const path = require('path');
 const fs = require('fs');
 const views = require('koa-views');
